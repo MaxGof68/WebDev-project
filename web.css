@@ -1,29 +1,38 @@
-#head1 {
-    border: 2px solid black;
-    background-color: blue;
-    display: block; 
-    margin: 0 auto; 
-    text-align: center; 
-    width: 35%;
-    
-    
-    color: white;
+/* Style for the section container */
+section {
+    display: flex; /* Arrange children side by side */
+    justify-content: space-between; /* Add space between items */
+    align-items: flex-start; /* Align items vertically at the top */
+    gap: 20px; /* Add spacing between the two divs */
+    padding: 20px; /* Add padding around the section */
 }
 
-body{
-    background-color: black;
+/* Individual div styling */
+.text1 {
+    flex: 1; /* Allow it to grow and take space proportionally */
+    background-color: lightblue; /* Optional: Background for visibility */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.text1{
-    color: white;
-    background-color: blue;
-    border: white solid 1px;
-    width: 40%;
-    display: inline-block;
-    
-
+.slide {
+    flex: 2; /* Make this section larger than .text1 */
+    background-color: lightgray; /* Optional: Background for visibility */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.slideshow {
-    display: inline-block;
+/* Styling for the slideshow elements */
+.slideshow, .slidetext {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center images horizontally */
 }
