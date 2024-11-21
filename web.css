@@ -1,0 +1,23 @@
+#head1 {
+    border: 2px solid black;
+    background-color: blue;
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+    width: 35%;
+    
+    
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.text1{
+    color: white;
+    background-color: blue;
+    border: white solid 1px;
+    width: 40%;
+    
+}
