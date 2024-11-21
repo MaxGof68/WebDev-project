@@ -19,5 +19,11 @@ body{
     background-color: blue;
     border: white solid 1px;
     width: 40%;
+    display: inline-block;
     
+
+}
+
+.slideshow {
+    display: inline-block;
 }
