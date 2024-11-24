@@ -17,11 +17,13 @@ section {
 }
 
 .slide {
-    flex: 2; /* Make this section larger than .text1 */
-    background-color: lightgray; /* Optional: Background for visibility */
+    flex: 0 1 70%; /* Make the slide take up 70% of the available space */
+    max-width: 50%;
+    background-color: lightgray;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 /* Styling for the slideshow elements */
@@ -30,8 +32,9 @@ section {
     margin-bottom: 10px;
 }
 
+
 img {
-    max-width: 100%; /* Ensure images are responsive */
+    width: 600px; /* Ensure images are responsive */
     height: auto;
     display: block;
     margin: 0 auto; /* Center images horizontally */
