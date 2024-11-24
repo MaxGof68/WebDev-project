@@ -33,9 +33,35 @@ section {
 }
 
 
-img {
+.slideimg {
     width: 600px; /* Ensure images are responsive */
     height: auto;
     display: block;
     margin: 0 auto; /* Center images horizontally */
+}
+
+.const {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex; /* Arrange navigation links horizontally */
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;/* Add spacing between links */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Match the header color */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.navbar ul li a:hover {
+    color: #dbeafe; /* Light blue on hover */
 }
