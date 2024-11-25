@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <script src="main.js"></script>
+        <script src="main.js" defer></script>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="form.css">
         <title>Sign-up</title>
+        <link rel="icon" href="data:,">
     </head>
-    <body>
         <header class="const">
             <img src="assets/SAClogo.png" alt="logo">
             <h1 id="head1">UN Sustainable Development Goals</h1>
@@ -17,4 +19,36 @@
                 </ul>
             </nav>
         </header>
+
+        <main>
+            <h3>Sign-up Form</h3>
+            <div class="info">
+                <p>[Insert form description here]<br></p>
+            </div>
+            <section>
+                <form id="myForm" method="post" action="/contact">
+                    <fieldset>
+                    <label for="Name">First Name*: </label>
+                    <input type="text" name="Name" id="name" required></input>
+                    <label for="Surname">Surname*: </label>
+                    <input type="text" name="Surname" id="Surname" required></input>
+                    <label for="Email">E-mail*: </label>
+                    <input type="text" name="Email" id="email" required></input>
+    
+                    <label for="Comments">Comments: </label>
+                    <textarea name="Comments"></textarea>
+    
+                    <input id="contact_submit" class="btn" type="submit" value="Submit"></input>
+                    <p class="message">*:Required field</p>
+                </fieldset>
+                </form>
+                <div>
+                    <img src="assets/allgoals2.png" alt="Goal 1" class="slideimg">
+                    <div class="slidetext">[Insert caption here]</div>
+                </div>
+            </section>
+
+            
+          
+        </main>
 </html>
