@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Goal 1",
+        "goal": "End poverty in all its forms everywhere.",
+        "imageURL": "assets/goal1",
+        "alt": "infographic about goal 1"
+    },
+
+    {
+        "title": "Goal 2",
+        "goal": "End hunger, achieve food security and improved nutrition and proote sustainable agriculture",
+        "imageURL": "assets/goal2",
+        "alt": "infographic about goal 2"
+    },
+
+    {
+        "title":"Goal 3",
+        "goal": "Ensure healthy lives and promote well-being for all at all ages",
+        "imageURL": "assets/goal3",
+        "alt": "infographic about goal 3"
+    }
+]
