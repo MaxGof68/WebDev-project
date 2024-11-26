@@ -5,8 +5,8 @@
         "role": "",
         "responsibility": "",
         "contributions": "",
-        "imageURL": "",
-        "alt": ""
+        "imageURL": "assets/member.png",
+        "alt": "Image of team member"
     },
 
     {
@@ -15,8 +15,8 @@
         "role": "",
         "responsibility": "",
         "contributions": "",
-        "imageURL": "",
-        "alt": ""
+        "imageURL": "assets/member.png",
+        "alt": "Image of team member"
     },
 
     {
@@ -25,7 +25,7 @@
         "role": "",
         "responsibility": "",
         "contributions": "",
-        "imageURL": "",
-        "alt": ""
+        "imageURL": "assets/member.png",
+        "alt": "Image of team member"
     }
 ]

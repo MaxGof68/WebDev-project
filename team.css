@@ -1,0 +1,26 @@
+#teamInfo {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.column{
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cloumn h3{
+    font-size: 1.5em;
+}
+
+.column p{
+    color: #555;
+    line-height: 1.2;
+}
+
+#teamInfo img {
+    width: 25%;
+}
