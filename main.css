@@ -16,6 +16,15 @@ section {
     border-radius: 5px;
 }
 
+#head1 {
+    background-color: lightblue;
+    border: black solid 2px;
+    margin-left: 5px;
+    padding: 4px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 .slide {
     flex: 0 1 70%; /* Make the slide take up 70% of the available space */
     max-width: 50%;
@@ -44,15 +53,24 @@ section {
     display: flex;
 }
 
+.navbar {
+    
+}
+
 .navbar ul {
     display: flex; /* Arrange navigation links horizontally */
     list-style: none; /* Remove bullets */
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 5px;
+    background-color: lightblue;
+    margin-top: 30px;
+    border: solid black 1px;
 }
 
 .navbar ul li {
-    margin-left: 20px;/* Add spacing between links */
+    margin-left: 10px;/* Add spacing between links */
+    margin-right: 10px;
+    
 }
 
 .navbar ul li a {
