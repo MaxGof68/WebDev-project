@@ -2,14 +2,20 @@
     display: flex;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
+    max-width: 100%; /* Ensure the container doesn't exceed the width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
 }
 
-.column{
+.column {
     flex: 1;
+    min-width: 200px; /* Set a minimum width to prevent too much shrinking */
     text-align: center;
     padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box; /* Ensure padding/border doesn't affect width */
 }
 
 .cloumn h3{

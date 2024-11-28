@@ -5,43 +5,63 @@
 section {
     display: flex; /* Arrange children side by side */
     justify-content: space-evenly; /* Add space between items */
-    align-items: flex-start; /* Align items vertically at the top */
     gap: 30px; /* Add spacing between the two divs */
     padding: 20px; /* Add padding around the section */
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    display: grid;
+    grid-template-rows: 1fr auto; 
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+main {
+    padding: 20px;
+}
+
 
 /* Individual div styling */
-.text1 {
-    flex: 1; /* Allow it to grow and take space proportionally */
-    background-color: lightblue; /* Optional: Background for visibility */
-    padding: 10px;
+.text1, .slide {
+    flex: 1;
+    background-color: lightblue; 
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
+.text1 p {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
 #head1 {
-    background-color: lightblue;
-    border: black solid 2px;
-    margin-left: 5px;
-    padding: 4px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;
 }
 
 .slide {
-    flex: 0 1 70%; /* Make the slide take up 70% of the available space */
-    max-width: 50%;
     background-color: lightgray;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
+    height: auto;
 }
 
 /* Styling for the slideshow elements */
@@ -52,9 +72,10 @@ body {
 
 
 .slideimg {
-    width: 600px; /* Ensure images are responsive */
-    height: auto;
+    width: 100%; 
+    height: 300px;
     display: block;
+    object-fit: contain;
     margin: 0 auto; /* Center images horizontally */
     border-radius: 10px;
 }
@@ -63,19 +84,33 @@ body {
     display: flex;
 }
 
+header.const {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 60px;
+    margin-right: 20px;
+}
+
 .navbar ul {
     display: flex; /* Arrange navigation links horizontally */
     list-style: none; /* Remove bullets */
-    margin: 20px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     background-color: lightblue;
-    margin-top: 30px;
+    margin-top: 10px;
     border: solid black 1px;
 }
 
 .navbar ul li {
-    margin-left: 10px;/* Add spacing between links */
-    margin-right: 10px;
+    margin: 0 15px;
     
 }
 
@@ -83,7 +118,7 @@ body {
     text-decoration: none; /* Remove underline from links */
     color: black; /* Match the header color */
     font-weight: bold;
-    transition: color 0.3s; /* Smooth hover effect */
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .navbar ul li a:hover {
@@ -94,20 +129,24 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
+}
+
 footer {
-    background-color: lightblue; 
-    color: white; 
-    padding: 15px 0; 
-    text-align: center; 
-    font-size: 14px; 
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: lightblue;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
 }
 
 footer a {
-    color: white; 
-    text-decoration: none; 
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -116,17 +155,46 @@ footer a:hover {
     color: white; 
 }
 
-
 @media (max-width: 768px) {
-    section {
+    header.const {
         flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+        text-align: center; 
     }
-    .slide {
-        max-width: 100%; 
-        flex: 1 1 100%; 
+
+    header img {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        max-height: 50px; 
     }
-    form {
-        width: 100%; 
-        flex: 1 1 100%; 
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;  
+        align-items: center; 
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0; 
+    }
+
+    .navbar ul li a {
+        font-size: 1.1em; 
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        text-align: center;
+    }
+
+    .text1, .slide {
+        width: 100%;
+        height: auto; 
+    }
+
+    .slideimg {
+        max-width: 100%;
+        height: auto;
     }
 }
