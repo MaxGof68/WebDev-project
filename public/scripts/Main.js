@@ -1,4 +1,4 @@
-if (document.querySelector(".slideimg")) {
+if (document.querySelector(".slide")) {
     // Check to see if page includes slideshow
     document.addEventListener("DOMContentLoaded", () => {
         fetch('index.json')
@@ -13,33 +13,31 @@ if (document.querySelector(".slideimg")) {
                     const img = document.createElement("img");
                     img.src = slide.image;
                     img.alt = slide.caption;
-                    img.classList.add("slideimg");
-                    img.style.display = "none"; // Initially hide all slides
+                    img.classList.add("slideimg", "hidden");
 
                     // Create caption element
                     const caption = document.createElement("div");
-                    caption.classList.add("slidetext");
-                    caption.textContent = slide.caption;
-                    caption.style.display = "none"; // Initially hide all captions
+                    caption.textContent = slide.caption || "";
+                    caption.classList.add("slidetext", "hidden");
 
                     // Append to the container
                     slideContainer.appendChild(img);
                     slideContainer.appendChild(caption);
                 });
 
-                const slides = document.querySelectorAll(".slideimg"); // Select all slideshow images
-                const captions = document.querySelectorAll(".slidetext"); // Select all captions
+                const slides = slideContainer.querySelectorAll(".slideimg"); // Select all slideshow images
+                const captions = slideContainer.querySelectorAll(".slidetext"); // Select all captions
 
                 // Hide all slides initially
                 function hideAllSlides() {
-                    slides.forEach(slide => (slide.style.display = "none"));
-                    captions.forEach(caption => (caption.style.display = "none"));
+                    slides.forEach(slide => slide.classList.remove("visible"));
+                    captions.forEach(caption => caption.classList.remove("visible"));
                 }
 
                 // Show the current slide
                 function showSlide(index) {
-                    slides[index].style.display = "block"; // Show image
-                    captions[index].style.display = "block"; // Show caption
+                    slides[index].classList.add("visible");
+                    captions[index].classList.add("visible");
                 }
 
                 // Move to the next slide
@@ -68,3 +66,4 @@ if (document.querySelector(".slideimg")) {
             .catch(error => console.error("Error loading captions.json:", error));
     });
 }
+
