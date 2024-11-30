@@ -1,0 +1,13 @@
+{
+    "mainText": "Information about the 3 goals of sustainable development.",
+    "slides": [
+        {
+            "image": "assets/goal1.jpg",
+            "caption": "Caption 1"
+        },
+        {
+            "image": "assets/allgoals.jpg",
+            "caption": "Caption 2"
+        }
+    ]
+}
