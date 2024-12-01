@@ -1,0 +1,8 @@
+#goals {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 100%; /* Ensure the container doesn't exceed the width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}

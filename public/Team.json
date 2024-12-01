@@ -1,30 +1,25 @@
 [
     {
         "name": "Oluwatobiloba Ogunleye",
-        "bio": "",
-        "role": "",
-        "responsibility": "",
-        "contributions": "",
+        "role": "Front-end developer",
+        "responsibility": "Designing and implementing the user interface, ensuring responsiveness, and styling with CSS",
+        "contributions": "Created the page layout, added styling for navigation and sections, implemented JavaScript for slideshow functionality",
         "imageURL": "assets/member.png",
         "alt": "Image of team member"
     },
-
     {
         "name": "Max Goffin",
-        "bio": "",
-        "role": "",
-        "responsibility": "",
-        "contributions": "",
+        "role": "Team leader",
+        "responsibility": "Organizing workloads and meetings, ensuring team coordination",
+        "contributions": "Planned meeting schedules, assisted in coding front-end components and documentation",
         "imageURL": "assets/member.png",
         "alt": "Image of team member"
     },
-
     {
         "name": "Donald Hight",
-        "bio": "",
-        "role": "",
-        "responsibility": "",
-        "contributions": "",
+        "role": "Back-end developer",
+        "responsibility": "Setting up the server environment, integrating database with Node.js, implementing API endpoints",
+        "contributions": "Created the Node.js server, integrated the Express framework",
         "imageURL": "assets/member.png",
         "alt": "Image of team member"
     }

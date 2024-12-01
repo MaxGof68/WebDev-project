@@ -42,11 +42,16 @@ main {
     justify-content: space-between; 
 }
 
+
+
 .text1 p {
     margin: 0;
     padding: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    display: block;
+    height: 100px; /* Fixed height */
+    width: 630px;
 }
 
 #head1 {

@@ -21,7 +21,6 @@ function createTeamCards(data) {
     // Add Bio
     const details = document.createElement("p");
         details.innerHTML = `
-            <strong>Bio:</strong> ${member.bio}<br>
             <strong>Role:</strong> ${member.role}<br>
             <strong>Responsibility:</strong> ${member.responsibility}<br>
             <strong>Contributions:</strong> ${member.contributions}
