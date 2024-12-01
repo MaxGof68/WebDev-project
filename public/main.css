@@ -49,6 +49,9 @@ main {
     padding: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+#maintext p {
     display: block;
     height: 100px; /* Fixed height */
     width: 630px;
