@@ -1,4 +1,4 @@
-let sectionElement = document.querySelector('#Goals')
+let sectionElement = document.querySelector('#goals')
 
 if (sectionElement != null) 
     {
@@ -7,7 +7,7 @@ if (sectionElement != null)
                 .then(response => response.json())
                 .then(responseData =>{
                     console.log(responseData);
-                    for (item of responseData) {
+                    for (let item of responseData) {
 
                         // creating html elements
                         const myGoals = document.createElement('article');
@@ -27,7 +27,12 @@ if (sectionElement != null)
                         imageElement.alt = item.alt;
                         myGoal.textContent = `${item.goal}`;
                         myTitle.textContent = `${item.title}`;
-                        myTarget.textContent = `${item.target}`;
+                        
+                        item.targets.forEach(target => {
+                            const listItem = document.createElement('li');
+                            listItem.textContent = target;
+                            myTarget.appendChild(listItem);
+                        });
 
                         // appending elements to the article element created on the goals page
                         myGoals.appendChild(imageElement);
