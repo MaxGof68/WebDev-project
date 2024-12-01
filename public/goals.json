@@ -2,6 +2,7 @@
     {
         "title": "Goal 1",
         "goal": "End poverty in all its forms everywhere.",
+        "targets": ["Target 1.1: Eradicate extreme poverty","Target 1.2: Reduce poverty by at least 50%", "Target 1.3: Implement nationally appropriate social protection systems", "Target 1.4: Equal rights to ownership, basic services, technology, and economic resources", "Target 1.5: Build resilience to environmental, economic, and social disasters", "Target 1.a: Mobilization of resources to end poverty", "Target 1.b: Establishment of poverty eradication policy frameworks at all levels"],
         "imageURL": "assets/goal1",
         "alt": "infographic about goal 1"
     },
@@ -9,6 +10,7 @@
     {
         "title": "Goal 2",
         "goal": "End hunger, achieve food security and improved nutrition and proote sustainable agriculture",
+        "targets": ["Target 2.1: Universal access to safe and nutritious food", "Target 2.2: End all forms of malnutrition", "Target 2.3: Double the productivity and incomes of small-scale food producers", "Target 2.4: Sustainable food production and resilient agricultural practices", "Target 2.5: Maintain the genetic diversity in food production", "Target 2.a: Invest in rural infrastructure, agricultural research, technology and gene banks", "Target 2.b.: Prevent agricultural trade restrictions, market distortions and export subsidies", "Target 2.c. Ensure stable food commodity markets and timely access to information"],
         "imageURL": "assets/goal2",
         "alt": "infographic about goal 2"
     },
@@ -16,6 +18,7 @@
     {
         "title":"Goal 3",
         "goal": "Ensure healthy lives and promote well-being for all at all ages",
+        "targets": ["Target 3.1: Reduce maternal mortality", "Target 3.2: End all preventable deaths under five years of age", "Target 3.3: Fight communicable diseases", "Target 3.4: Reduce mortality from non-communicable diseases and promote mental health", "Target 3.5: Prevent and treat substance abuse", "Target 3.6: Reduce road injuries and deaths", "Target 3.7: Universal access to sexual and reproductive care, family planning and education", "Target 3.8: Achieve universal health coverage", "Target 3.9: Reduce illnesses and deaths from hazardous chemicals and pollution", "Target 3.a: Implement the WHO framework convention on tobacco control", "Target 3.b: Support research, development and universal access to affordable vaccines and medicines", "Target 3.c: Increase health financing and support health workforce in developing countries", "Target 3.d: Improve early warning systems for global health risks"],
         "imageURL": "assets/goal3",
         "alt": "infographic about goal 3"
     }
