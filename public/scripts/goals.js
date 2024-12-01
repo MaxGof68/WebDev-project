@@ -22,6 +22,6 @@ if (sectionElement != null)
                         myGoals.appendChild(myTitle);
                         myGoals.appendChild(myGoal);
                     }
-                })
+                }).catch(error => console.error("Error fetching JSON data:", error));;
             })
     }
