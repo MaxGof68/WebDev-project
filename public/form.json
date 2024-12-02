@@ -1,11 +1,9 @@
-[
-    {
-        "id":"sign-up form",
-        "contents": "Sign up to our newsletter here to receive regular updates."
-    },
+{
+    
+    "SignUpForm": "Sign up to our newsletter here to receive regular updates."
+    ,
+    "caption": "UN 17 sustainable development goals"
+    ,
+    "FootText": "Team P11 &copy; 2024"
 
-    {
-        "id":"caption",
-        "contents": "UN 17 sustainable development goals"
-    }
-]
+}

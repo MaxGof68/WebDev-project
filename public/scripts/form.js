@@ -1,38 +1,22 @@
-function populateData(data){
-
-    data.forEach((item) => {
-
-    // Add sign-up form content
-    if (item.id == "sign-up form") {
-
-        const info = document.getElementById("info");
-    
-        const contents = document.createElement("p");
-        contents.textContent = item.contents;
-    
-        info.appendChild(contents);
-
-    }
-
-    // Add caption content
-    if (item.id == "caption") {
-
-        const info = document.getElementById("slidetext");
-    
-        const contents = document.createElement("p");
-        contents.textContent = item.contents;
-    
-        info.appendChild(contents);
-
-    }
-})
-}
-
 document.addEventListener("DOMContentLoaded", () => {
     fetch('form.json')
     .then(response => response.json())
     .then(data => {
-        populateData(data)
+
+        const mainFootElement = document.querySelector("#Teamname");
+        if (mainFootElement) {
+            mainFootElement.innerHTML = data.FootText; // Use 'data' here instead of 'responseData'
+        }
+            
+        const info = document.querySelector("#info");
+        if (info) {
+            info.innerHTML = data.SignUpForm; // Use 'data' here instead of 'responseData'
+        }
+
+        const caption = document.querySelector("#slidetext");
+        if (caption) {
+            caption.innerHTML = data.caption; // Use 'data' here instead of 'responseData'
+        }
     })
     .catch(error => console.error("Error fetching JSON data:", error));
 });
@@ -46,33 +30,33 @@ if(document.querySelector('#contact_submit')){
     let myEmail = document.querySelector('#email');
 
     myForm.addEventListener("submit", (e)=>{
-    e.preventDefault();
+        e.preventDefault();
 
-    const formBody = {
-        Name:myName.value,
-        Surname:mySurname.value,
-        Email:myEmail.value,
-        Comments:myComments.value,
-        }
+        const formBody = {
+            Name: myName.value,
+            Surname: mySurname.value,
+            Email: myEmail.value,
+            Comments: myComments.value,
+        };
 
-    const requestHeaders = {
-    "Content-Type": "application/json"}
+        const requestHeaders = {
+            "Content-Type": "application/json"
+        };
 
-    fetch("/form", {
-        method: 'POST',
-        headers: requestHeaders,
-        body: JSON.stringify(formBody),
+        fetch("/form", {
+            method: 'POST',
+            headers: requestHeaders,
+            body: JSON.stringify(formBody),
         })
-    .then(response => {
-        if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
         })
-    .then((responsedata) => {
-        console.log(responsedata);
-        myText.textContent=`Hi ${responsedata.name} ${responsedata.surname}, your message has
-        been received, we will contact you at ${responsedata.email}`;
+        .then((responsedata) => {
+            console.log(responsedata);
+            myText.textContent = `Hi ${responsedata.name} ${responsedata.surname}, your message has been received, we will contact you at ${responsedata.email}`;
         });
-})
+    });
 }

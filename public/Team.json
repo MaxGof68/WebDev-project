@@ -1,26 +1,29 @@
-[
-    {
-        "name": "Oluwatobiloba Ogunleye",
-        "role": "Front-end developer",
-        "responsibility": "Designing and implementing the user interface, ensuring responsiveness, and styling with CSS",
-        "contributions": "Created the page layout, added styling for navigation and sections, implemented JavaScript for slideshow functionality",
-        "imageURL": "assets/member.png",
-        "alt": "Image of team member"
-    },
-    {
-        "name": "Max Goffin",
-        "role": "Team leader",
-        "responsibility": "Organizing workloads and meetings, ensuring team coordination",
-        "contributions": "Planned meeting schedules, assisted in coding front-end components and documentation",
-        "imageURL": "assets/member.png",
-        "alt": "Image of team member"
-    },
-    {
-        "name": "Donald Hight",
-        "role": "Back-end developer",
-        "responsibility": "Setting up the server environment, integrating database with Node.js, implementing API endpoints",
-        "contributions": "Created the Node.js server, integrated the Express framework",
-        "imageURL": "assets/member.png",
-        "alt": "Image of team member"
-    }
-]
+{
+    "team": [
+        {
+            "name": "Oluwatobiloba Ogunleye",
+            "role": "Front-end developer",
+            "responsibility": "Developing user interface and styling",
+            "contributions": "Built the website layout and styled components",
+            "imageURL": "assets/member.png",
+            "alt": "Image of team member"
+        },
+        {
+            "name": "Max Goffin",
+            "role": "Team leader",
+            "responsibility": "Organising workloads and meetings",
+            "contributions": "Planned meeting schedules, updated Trello board, assisted in coding",
+            "imageURL": "assets/member.png",
+            "alt": "Image of team member"
+        },
+        {
+            "name": "Donald Hight",
+            "role": "Back-end developer",
+            "responsibility": "Creating nodeJS server, implementing express framework",
+            "contributions": "Set up the backend server and APIs",
+            "imageURL": "assets/member.png",
+            "alt": "Image of team member"
+        }
+    ],
+    "FootText": "Team P11 &copy; 2024"
+}

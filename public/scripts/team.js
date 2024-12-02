@@ -35,10 +35,22 @@ function createTeamCards(data) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('team.json')
-    .then(response => response.json())
-    .then(data => {
-        createTeamCards(data);
-    })
-    .catch(error => console.error("Error fetching JSON data:", error));
+    fetch('Team.json')
+        .then(response => response.json())
+        .then(data => {
+            // Process team cards
+            if (data.team) {
+                createTeamCards(data.team);
+            }
+
+            // Set footer text
+            if (data.FootText) {
+                const mainFootElement = document.querySelector("#Teamname");
+                if (mainFootElement) {
+                    mainFootElement.innerHTML = data.FootText; // Set footer text
+                }
+            }
+        })
+        .catch(error => console.error("Error fetching JSON data:", error));
 });
+

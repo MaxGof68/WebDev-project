@@ -62,7 +62,12 @@ if (document.querySelector(".slide")) {
                 if (mainTextElement) {
                     mainTextElement.innerHTML = data.mainText;
                 }
+                const mainFootElement = document.querySelector("#Teamname");
+                if (mainFootElement) {
+                    mainFootElement.innerHTML = data.FootText;
+                }
             })
+        
             .catch(error => console.error("Error loading captions.json:", error));
     });
 }
