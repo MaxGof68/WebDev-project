@@ -255,4 +255,9 @@ footer a:hover {
     .slide {
         height: auto; 
     }
+
+    #maintext p{
+        width: 100%;
+        height: auto;
+    }
 }
