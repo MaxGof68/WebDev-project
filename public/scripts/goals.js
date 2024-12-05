@@ -18,6 +18,7 @@ if (sectionElement != null) {
                     const myTitle = document.createElement('h4');
                     const myGoal = document.createElement('p');
                     const myTarget = document.createElement('ul');
+                    const myLink = document.createElement('a');
 
                     // Append article to the section element
                     sectionElement.appendChild(myGoals);
@@ -30,6 +31,8 @@ if (sectionElement != null) {
                     imageElement.alt = goal.alt;
                     myTitle.textContent = goal.title;
                     myGoal.textContent = goal.goal;
+                    myLink.textContent = goal.link;
+                    myLink.href = goal.linkURL;
 
                     // Populate the targets list
                     goal.targets.forEach(target => {
@@ -43,6 +46,7 @@ if (sectionElement != null) {
                     myGoals.appendChild(myTitle);
                     myGoals.appendChild(myGoal);
                     myGoals.appendChild(myTarget);
+                    myGoals.appendChild(myLink);
                 });
 
                 // Update the footer text
