@@ -25,8 +25,9 @@ if (document.querySelector(".slide")) {
                     slideContainer.appendChild(caption);
                 });
 
-                const slides = slideContainer.querySelectorAll(".slideimg"); // Select all slideshow images
-                const captions = slideContainer.querySelectorAll(".slidetext"); // Select all captions
+                //creates variables to select the slide and caption
+                const slides = slideContainer.querySelectorAll(".slideimg");
+                const captions = slideContainer.querySelectorAll(".slidetext"); 
 
                 // Hide all slides initially
                 function hideAllSlides() {
@@ -42,8 +43,8 @@ if (document.querySelector(".slide")) {
 
                 // Move to the next slide
                 function nextSlide() {
-                    hideAllSlides(); // Hide current slides
-                    currentIndex = (currentIndex + 1) % slides.length; 
+                    hideAllSlides(); // Hides previous slide
+                    currentIndex = (currentIndex + 1) % slides.length; //indexes by 1
                     showSlide(currentIndex); // Show the new slide
                 }
 
@@ -57,7 +58,7 @@ if (document.querySelector(".slide")) {
                 // Initialize the slideshow
                 startSlideshow();
 
-                // Update main text from JSON
+                // Update main text and footer text from JSON
                 const mainTextElement = document.querySelector(".text1 p");
                 if (mainTextElement) {
                     mainTextElement.innerHTML = data.mainText;
