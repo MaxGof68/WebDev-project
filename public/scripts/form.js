@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch('form.json')
     .then(response => response.json())
     .then(data => {
-
+        
+        // Load site content from Json
         const mainFootElement = document.querySelector("#Teamname");
         if (mainFootElement) {
             mainFootElement.innerHTML = data.FootText; // Use 'data' here instead of 'responseData'

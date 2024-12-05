@@ -3,6 +3,7 @@ function createTeamCards(data) {
 
     teamInfo.innerHTML = '';
 
+    // Create columns
     data.forEach((member, index) => {
     const column = document.createElement("div");
     column.classList.add("column");
