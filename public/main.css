@@ -254,3 +254,24 @@ footer a:hover {
         height: auto;
     }
 }
+
+.imageinfo {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin: 20px auto; /* Center the container */
+    width: 70%;
+    background-color: lightblue; /* Set background to light blue */
+    padding: 20px; /* Add padding around the image */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+.imageinfo img {
+    width: 50%; /* Scale the image down to 60% smaller */
+    height: auto; /* Maintain aspect ratio */
+    
+    padding: 5px; /* Padding inside the border */
+}
+
+
