@@ -67,6 +67,14 @@ if (document.querySelector(".slide")) {
                 if (mainFootElement) {
                     mainFootElement.innerHTML = data.FootText;
                 }
+
+                const maininfo = document.querySelector(".imageinfo");
+                if (maininfo) {
+                    const infographicImg = document.createElement("img");
+                    infographicImg.src = data.infographic; // Set the image source from JSON
+                    infographicImg.alt = "Infographic"; // Provide an alt text
+                    maininfo.appendChild(infographicImg); // Add the image to the `.imageinfo` container
+}
             })
         
             .catch(error => console.error("Error loading captions.json:", error));
