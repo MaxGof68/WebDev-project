@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 section {
-    display: flex; /* Arrange children side by side */
-    justify-content: space-evenly; /* Add space between items */
+    display: flex; 
+    justify-content: space-evenly; /* defines space between elements*/
     gap: 30px; /* Add spacing between the two divs */
-    padding: 20px; /* Add padding around the section */
+    padding: 20px; 
     flex-wrap: wrap;
     box-sizing: border-box;
 }
@@ -61,16 +61,16 @@ main {
     padding: 5px 10px;
 }
 
-/* Styling for the slideshow elements */
+
 .slide {
     background-color: lightblue;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden; /*hides overflowing text*/
     position: relative;
     box-sizing: border-box;
-    flex: 1;
+    flex: 1; /*specifies flex length*/
     min-height: 300px; 
     height: 100%; 
     display: flex;
@@ -79,7 +79,7 @@ main {
 }
 
 .slidetext {
-    position: absolute;
+    position: absolute; /*determines position with top, bottom, left right*/
     text-align: center; 
     color: black; 
     font-size: 1.2em; 
@@ -87,7 +87,7 @@ main {
     bottom: 0;
     text-align: justify;
     font-weight: bold; 
-    transition: opacity 1s ease-in-out; 
+    transition: opacity 1s ease-in-out; /*defines the transistion between two states of an element*/
 }
 
 .slideimg {
@@ -96,9 +96,9 @@ main {
     left: 0;
     width: 100%; 
     height: 100%; 
-    object-fit: contain; 
+    object-fit: contain; /*makes images fit the div*/
     opacity: 0; 
-    z-index: 0; 
+    z-index: 0; /*positions element behind all others*/
     transition: opacity 1s ease-in-out; 
 }
 
@@ -129,7 +129,7 @@ header img {
 
 .navbar ul {
     display: flex;
-    list-style: none;
+    list-style: none;/*determines bulletpoint dots*/
     margin: 0;
     padding: 0;
     background-color: lightblue;
@@ -166,13 +166,12 @@ header img {
 }
 
 .slide, .text1 {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*creates a shadow around the element*/
 }
 
 html, body {
     height: 100%;
     margin: 0;
-    grid-template-rows: auto 1fr auto;
     overflow-x: hidden;
 }
 
@@ -195,7 +194,7 @@ footer a:hover {
     color: white; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*determines */
     section {
         flex-direction: column; 
         align-items: center; 
@@ -256,22 +255,22 @@ footer a:hover {
 }
 
 .imageinfo {
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    margin: 20px auto; /* Center the container */
+    display: flex; /*center element*/
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px auto; 
+
     width: 70%;
-    background-color: lightblue; /* Set background to light blue */
-    padding: 20px; /* Add padding around the image */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    background-color: lightblue; 
+    padding: 20px; 
+    border-radius: 10px; 
+    
 }
 
 .imageinfo img {
-    width: 50%; /* Scale the image down to 60% smaller */
-    height: auto; /* Maintain aspect ratio */
-    
-    padding: 5px; /* Padding inside the border */
+    width: 50%; 
+    height: auto; 
+    padding: 5px; 
 }
 
 
